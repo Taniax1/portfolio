@@ -3,7 +3,8 @@
   background-color: #7ec8fa;
   background-attachment: fixed;
 	background-size: cover;
-  background-image: url('https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+  background-position: bottom;
+  background-image: url('https://i.imgur.com/rt7ksDu.jpg');
 }
 /* 
 .App-logo {
@@ -18,8 +19,8 @@
 } */
 
 .App-header {
-  background-color: #000000;
-  opacity: 52%;
+  background-color: #00000069;
+  /* opacity: 52%; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,15 +31,15 @@
 }
 
 .App-about {
-  background-color: #0b3440;
+  background-color: #edecffdb;;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-  opacity: 90%;
+  color: #030e2b;
+  /* opacity: 90%; */
 }
 
 .App-projects {
@@ -53,14 +54,14 @@
 }
 
 .App-connect {
-  background-color: #cf296b;
+  background-color: #ffe0eddb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #68003d;
 }
 
 .footer {
@@ -84,14 +85,61 @@
 }
 
 
-.row {
+.side-by-side {
   display: flex;
-  /* margin-right: 15px; */
+  margin-right: 15px;
   margin-left: 15px;
   /* flex-wrap: wrap; */
 }
 
 .about {
-  padding: 0 2%;
+  /* padding: 0 2%; */
+  /* padding: 0px 6% 0% 3%; */
   flex: 1;
+  font-size: initial;
+  box-shadow: 0 0 10px rgb(53 94 182);
+  padding: 9px 7% 6% 8%;
+}
+
+.about2 {
+  font-size: initial;
+  padding-left: 5%;
+}
+
+.interests {
+  padding: 0px 6% 0% 3%;
+  font-size: initial;
+}
+
+.name {
+  text-shadow: 3px 3px 2px #000000;
+  box-shadow: inset 0px 0px 0px 100px #ff005385;
+  font-size: xxx-large;
+}
+
+.name-contour {
+  box-shadow: 0px 0px 64px 43px #ff00538c;
+}
+
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: rotate(-21deg);
+    /* border: 1px solid black; */
+    right: 5%;
+    top: 75%;
+}
+
+.cell {
+  width: 66px;
+  height: 66px;
+  border: 1px solid rgb(229 141 139 / 61%);
+  font-size: 4em;
+  text-align: center;
+  line-height: 90px;
+  cursor: pointer;
 }
